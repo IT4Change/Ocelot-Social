@@ -261,7 +261,19 @@ export default {
       return this.$route.params.id === this.$store.getters['auth/user'].id
     },
     user() {
-      return this.User ? this.User[0] : {}
+      const user = this.User ? this.User[0] : {}
+
+      // Only for test purposes!
+      if (user.badges && user.badges.length > 0 && user.badges.length < 10) {
+        const lastBadge = user.badges[user.badges.length - 1]
+        const additionalBadges = Array(10 - user.badges.length).fill(lastBadge)
+        user.badges = [...user.badges, ...additionalBadges]
+
+        lastBadge.icon = '/img/badges/badges-slot-gray.svg'
+      }
+      // ^^^
+
+      return user
     },
     userName() {
       const { name } = this.user || {}
