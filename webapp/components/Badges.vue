@@ -65,18 +65,18 @@ export default {
   .hc-badge-container:nth-child(1) {
     width: $main-badge-size-x;
     height: $main-badge-size-y;
-    top: $offset-y + calc($gap-y / 2);
+    top: $offset-y + calc($gap-y / 2) - 1;
     left: 0;
     font-size: 20px; /* Doubled font size for first slot */
   }
 
   .hc-badge-container:nth-child(2) {
-    top: $offset-y + calc(-1 * $gap-y / 2);
+    top: $offset-y + calc(-1 * $gap-y / 2) - 1;
     left: calc($main-badge-size-x + $gap-x);
   }
 
   .hc-badge-container:nth-child(3) {
-    top: $offset-y + calc($slot-y + $gap-y / 2);
+    top: $offset-y + calc($slot-y + $gap-y / 2) - 1;
     left: calc($main-badge-size-x + $gap-x);
   }
 
@@ -96,12 +96,12 @@ export default {
   }
 
   .hc-badge-container:nth-child(7) {
-    top: $offset-y + calc(-1 * $gap-y / 2);
+    top: $offset-y + calc(-1 * $gap-y / 2) - 1;
     left: calc($main-badge-size-x + $gap-x + 2 * $slot-x);
   }
 
   .hc-badge-container:nth-child(8) {
-    top: $offset-y + calc($slot-y + $gap-y / 2);
+    top: $offset-y + calc($slot-y + $gap-y / 2) - 1;
     left: calc($main-badge-size-x + $gap-x + 2 * $slot-x);
   }
 
