@@ -53,7 +53,7 @@ export default {
     align-items: center;
     font-weight: bold;
     font-size: 10px;
-    color: #333;
+    color: #ffffff;
   }
 
   .hc-badge {
@@ -117,6 +117,24 @@ export default {
 
   .nordrhein-westfalen::after {
     content: "NW";
+  }
+
+  //test code
+  .test-express,
+  .liberation-express,
+  .nachweis-express,
+  .maskenfrei-express {
+    // todo: rename file according to purpose
+    background-image: url('/img/badges/slot-orange.svg');
+  }
+  .beitragsblocker,
+  .beitragsstopper,
+  .masern-impfbloker,
+  .rundfunk-alarm,
+  .freunde-der-demokratie,
+  .restart-democracy {
+    // todo: rename file according to purpose
+    background-image: url('/img/badges/slot-blue.svg');
   }
 
   .test-express::after {
