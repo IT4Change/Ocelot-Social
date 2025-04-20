@@ -263,15 +263,21 @@ export default {
     user() {
       const user = this.User ? this.User[0] : {}
 
-      // Only for test purposes!
-      if (user.badges && user.badges.length > 0 && user.badges.length < 10) {
-        const lastBadge = user.badges[user.badges.length - 1]
-        const additionalBadges = Array(10 - user.badges.length).fill(lastBadge)
-        user.badges = [...user.badges, ...additionalBadges]
+      const badgeList = [
+        { key: 'NW', title: 'Nordrhein Westfalen', type: 'nordrhein-westfalen', icon: null },
+        { key: 'TE', title: 'Test-Express', type: 'test-express', icon: null },
+        { key: 'LE', title: 'Liberation-Express', type: 'liberation-express', icon: null },
+        { key: 'NE', title: 'Nachweis-Express', type: 'nachweis-express', icon: null },
+        { key: 'ME', title: 'Maskenfrei.Express', type: 'maskenfrei-express', icon: null },
+        { key: 'BB', title: 'Beitragsblocker', type: 'beitragsblocker', icon: null },
+        { key: 'BS', title: 'Beitragsstopper', type: 'beitragsstopper', icon: null },
+        { key: 'MI', title: 'Masern-Impfbloker', type: 'masern-impfbloker', icon: null },
+        { key: 'RA', title: 'Rundfunk-Alarm', type: 'rundfunk-alarm', icon: null },
+        { key: 'FD', title: 'Freunde der Demokratie', type: 'freunde-der-demokratie', icon: null },
+        // { key: 'RD', title: 'Restart Democracy', type: 'restart-democracy', icon: null }
+      ]
 
-        lastBadge.icon = '/img/badges/badges-slot-gray.svg'
-      }
-      // ^^^
+      user.badges = badgeList
 
       return user
     },
