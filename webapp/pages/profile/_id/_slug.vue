@@ -270,11 +270,11 @@ export default {
         { key: 'NE', title: 'Nachweis-Express', type: 'nachweis-express', icon: null },
         { key: 'ME', title: 'Maskenfrei.Express', type: 'maskenfrei-express', icon: null },
         { key: 'BB', title: 'Beitragsblocker', type: 'beitragsblocker', icon: null },
-        { key: 'BS', title: 'Beitragsstopper', type: 'beitragsstopper', icon: null },
-        { key: 'MI', title: 'Masern-Impfbloker', type: 'masern-impfbloker', icon: null },
+        // { key: 'BS', title: 'Beitragsstopper', type: 'beitragsstopper', icon: null },
+        // { key: 'MI', title: 'Masern-Impfbloker', type: 'masern-impfbloker', icon: null },
         // { key: 'RA', title: 'Rundfunk-Alarm', type: 'rundfunk-alarm', icon: null },
-        // { key: 'FD', title: 'Freunde der Demokratie', type: 'freunde-der-demokratie', icon: null },
-        // { key: 'RD', title: 'Restart Democracy', type: 'restart-democracy', icon: null }
+        { key: 'FD', title: 'Freunde der Demokratie', type: 'freunde-der-demokratie', icon: null },
+        { key: 'RD', title: 'Restart Democracy', type: 'restart-democracy', icon: null },
         { title: '', type: 'empty', icon: null },
         { title: '', type: 'empty', icon: null },
       ]

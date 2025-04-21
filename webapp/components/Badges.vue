@@ -37,7 +37,7 @@ export default {
   $offset-y: ($badge-size-y) / 2 - 2 * $gap-x;
 
   width: calc($main-badge-size-x + 4 * $badge-size-x + 4 * $gap-x);
-  height: calc(3 * $badge-size-y + 4 * $gap-y);
+  height: calc($offset-y + 3 * $badge-size-y + 4 * $gap-y);
   margin: auto;
 
   .hc-badge-container {
@@ -67,7 +67,22 @@ export default {
     height: $main-badge-size-y;
     top: $offset-y + calc($gap-y / 2) - 1;
     left: 0;
-    font-size: 20px; /* Doubled font size for first slot */
+    color: #777777;
+    font-size: 17px;
+    background-image: url('/img/badges/slot-main.svg');
+  }
+
+  .hc-badge-container:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url('/img/badges/stars.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .hc-badge-container:nth-child(2) {
@@ -116,7 +131,7 @@ export default {
   }
 
   .nordrhein-westfalen::after {
-    content: "NW";
+    content: 'NW';
   }
 
   .test-express,
@@ -137,43 +152,43 @@ export default {
   }
 
   .test-express::after {
-    content: "TE";
+    content: 'TE';
   }
 
   .liberation-express::after {
-    content: "LE";
+    content: 'LE';
   }
 
   .nachweis-express::after {
-    content: "NE";
+    content: 'NE';
   }
 
   .maskenfrei-express::after {
-    content: "ME";
+    content: 'ME';
   }
 
   .beitragsblocker::after {
-    content: "BB";
+    content: 'BB';
   }
 
   .beitragsstopper::after {
-    content: "BS";
+    content: 'BS';
   }
 
   .masern-impfbloker::after {
-    content: "MI";
+    content: 'MI';
   }
 
   .rundfunk-alarm::after {
-    content: "RA";
+    content: 'RA';
   }
 
   .freunde-der-demokratie::after {
-    content: "FD";
+    content: 'FD';
   }
 
   .restart-democracy::after {
-    content: "RD";
+    content: 'RD';
   }
 }
 </style>
