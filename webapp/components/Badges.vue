@@ -119,22 +119,21 @@ export default {
     content: "NW";
   }
 
-  //test code
   .test-express,
   .liberation-express,
   .nachweis-express,
-  .maskenfrei-express {
-    // todo: rename file according to purpose
-    background-image: url('/img/badges/slot-orange.svg');
-  }
+  .maskenfrei-express,
   .beitragsblocker,
   .beitragsstopper,
   .masern-impfbloker,
-  .rundfunk-alarm,
+  .rundfunk-alarm {
+    // todo: rename file according to purpose
+    background-image: url('/img/badges/slot-blue.svg');
+  }
   .freunde-der-demokratie,
   .restart-democracy {
     // todo: rename file according to purpose
-    background-image: url('/img/badges/slot-blue.svg');
+    background-image: url('/img/badges/slot-orange.svg');
   }
 
   .test-express::after {
